@@ -54,6 +54,7 @@ To check the server is running properly you can run this command
 sudo systemctl status redis-server
 ```
 if you see an output which indicates active/running it means that the server has been started successully
+
 **9-** run celery worker
 Return to the project directory and start the celery worker in the terminal by this command
 ```python
