@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="d-flex justify-content-center align-items-center" style="height: 85vh;">
+<div class="card" style="width: 90%; max-width: 20rem;">
+  <img src="https://imageio.forbes.com/specials-images/imageserve/5fb5c024bf3bf4129d04e891/Red-and-Green-Gift/960x0.jpg?format=jpg&width=960" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">YOU HAVE COMPLETED THE RAFFLE</h5>
+    <p class="card-text">Congratulations! The raffle is completed.Please check your email notifications to see the person that you are going to buy a gift </p>
+    <a href="{% url 'upload_file' %}" class="btn btn-danger stretched-link">Go back to form</a>
+  </div>
+</div>
+</div>
+{% endblock %}

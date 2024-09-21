@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="vstack gap-2 col-md-5 ">
+    <div class="sticky-xl-top">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <h1 class="display-3" style="color:white !important;">Upload a File</h1>
+            </blockquote>
+        </figure>
+    </div>
+    <form id="uploadForm" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-control form-control-lg">
+            {{form.file}}
+        </div>
+        <div class="d-grid gap-2 col-8 mx-auto">
+            <button class="btn btn-danger mt-4" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
